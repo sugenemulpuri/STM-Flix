@@ -1,0 +1,11 @@
+<div>
+  <div class="movieButton">
+  <img
+    src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{
+      movieData.poster_path
+    }}"
+  />
+  <button (click)="addToWatchList()">Add To Watch-List</button>
+    </div>
+  <p>{{ movieData.overview }}</p>
+</div>

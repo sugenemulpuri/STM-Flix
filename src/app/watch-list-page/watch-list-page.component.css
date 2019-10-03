@@ -1,0 +1,41 @@
+
+.watchList {
+  margin-top: 60px;
+}
+h1 {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-style: italic;
+}
+.favorite {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  margin-left: 5%;
+  background: black;
+  border-radius: 15px;
+  border-color: black;
+  width: 35%;
+  height: 30px;
+  color: white;
+}
+
+button:hover {
+  background: #B10006;
+}
+
+input {
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+}
+
+select {
+  margin: 0 0 15px 0;
+}
+.grid {
+  display: grid;
+  grid-template: auto/ auto auto auto;
+}

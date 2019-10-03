@@ -1,0 +1,70 @@
+<div class="homePage">
+<form
+  id="search"
+  #formSearchTitle="ngForm"
+  (submit)="searchMovie(formSearchTitle.value.searchTerm)"
+>
+  <!-- <i class="fas fa-search"></i> -->
+  <input
+    id="searchInput"
+    type="text"
+    name="searchTerm"
+    placeholder="Search by movie title..."
+    ngModel
+  />
+</form>
+
+<form
+  id="filter"
+  #form="ngForm"
+  (ngSubmit)="
+    getData(
+      form.value.name,
+      form.value.greaterOrLessThan,
+      form.value.runTime,
+      form.value.popularity
+    )
+  "
+>
+  <h2 id="searchFilter">Filter Your Search</h2>
+  <select name="name" ngModel>
+      <option value="" disabled selected>Genre</option>
+
+    <option *ngFor="let genre of this.genres" value="{{ genre.id }}">{{
+      genre.name
+    }}</option>
+  </select>
+  <select name="greaterOrLessThan" ngModel>
+      <option value="" disabled selected>More or Less Than</option>
+
+    <option value="gte">More Than</option>
+    <option value="lte">Less Than</option>
+  </select>
+  <input
+    id="filterInput"
+    type="text"
+    name="runTime"
+    placeholder="Run Time"
+    ngModel
+  />
+  <select name="popularity" ngModel>
+      <option value="" disabled selected>Sort popularity</option>
+
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+  </select>
+  <button>Submit</button>
+</form>
+</div>
+
+<div class="grid">
+  <div *ngFor="let movie of movieData">
+    <a routerLink="/details/{{ movie.id }}">
+      <img
+        src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{
+          movie.poster_path
+        }}"
+      />
+    </a>
+  </div>
+</div>

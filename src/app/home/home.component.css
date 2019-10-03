@@ -1,0 +1,55 @@
+body {
+  background: #B10006;
+  height: 100%;
+}
+
+/* div{
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+
+} */
+.home {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  background: #B10006;
+  color: #fff;
+  height: 80px;
+  text-align: center;
+  align-content: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+  padding: 2px;
+}
+
+#movie {
+  padding-right: 10px;
+}
+
+.active {
+  color: yellow;
+  /* border: 2px dashed red; */
+}
+
+/* footer {
+  background: black;
+  position: fixed;
+  bottom: 0px;
+  color: white;
+  width: 100%;
+  text-align: end;
+} */

@@ -1,0 +1,36 @@
+form {
+  background: #e0d8d8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 25px;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+}
+
+button {
+  background: #39ddf4;
+  border-radius: 5px;
+  border-color: #39ddf4;
+  width: 25%;
+  align-self: center;
+}
+
+input {
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+}
+
+#components {
+  width: 100%
+}
+
+img {
+  width: 50%;
+}

@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  /* background: #b7f1fc; */
+  background-color: #B10006;
+  /* background-repeat: no-repeat; */
+  background-size: 100vh;
+  background-size: 100vw;
+}

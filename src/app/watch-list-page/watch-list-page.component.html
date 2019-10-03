@@ -1,0 +1,15 @@
+<div class="watchList">
+<h1>Your Favorites</h1>
+<div class="grid">
+  <div class="favorite" *ngFor="let movie of watchList; index as i">
+    <a routerLink="/details/{{ movie.id }}">
+      <img
+        src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{
+          movie.poster_path
+        }}"
+      />
+    </a>
+    <button id="delete" (click)="removeMovie(i)">Remove</button>
+  </div>
+</div>
+</div>
