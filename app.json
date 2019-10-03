@@ -1,0 +1,3 @@
+"name": "STM FLIX",
+"description": "Movie Search Engine using TMDB API",
+"image": "heroku/nodejs"
